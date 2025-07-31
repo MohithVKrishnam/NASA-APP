@@ -1,0 +1,139 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+    background-color: #1a1a1a; 
+}
+
+.ar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    height: 60%;
+}
+
+/* Description Section */
+.desc {
+    background-color: #292b2c; 
+    padding: 20px;
+    border-radius: 20px; 
+    width: 70%;
+    color: #ffffff; 
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid #ffcc00; 
+}
+
+.desc h1 {
+    margin-bottom: 20px;
+    color: #ff66cc; 
+    font-size: 2.5rem; 
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.7); 
+}
+
+.desc p {
+    text-align: justify;
+    color: #e0e0e0; 
+    font-weight: 400; 
+    font-size: 1.2rem; 
+    line-height: 1.8;
+}
+
+/* Image Section */
+.img {
+    background-color: #292b2c;
+    padding: 0; 
+    border-radius: 20px;
+    width: 30%;
+    height: auto;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5); 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #ffcc00; 
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+body::before {
+    content: '';
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2; 
+}
+
+
+@keyframes sparkle {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.desc h1 {
+    animation: sparkle 1.5s infinite ease-in-out; 
+}
+
+.button-container {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.explore-btn {
+    padding: 10px 10px;  
+    background: linear-gradient(45deg, #1a237e, #0d47a1); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;  /* Smaller font */
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;  /* Soft shadow */
+}
+
+.explore-btn:hover {
+    background: linear-gradient(45deg, #283593, #1565c0); 
+    transform: scale(1.05); 
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);  
+}
+
+.explore-btn:active {
+    transform: scale(1.05); 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
